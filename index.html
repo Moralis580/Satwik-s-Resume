@@ -4,139 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satwik Keshari - Resume</title>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .navbar {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .navbar h1 {
-            margin: 0;
-            font-size: 1.5em;
-        }
-        .navbar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 15px;
-        }
-        .navbar ul li {
-            display: inline;
-        }
-        .navbar ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1em;
-        }
-        .navbar ul li a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: 20px auto;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .left {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .photo-container {
-            position: relative;
-            width: 135px;
-            height: 135px;
-            border-radius: 50%;
-            background-color: #4CAF50;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            border: 3px solid white;
-            margin-bottom: 20px;
-        }
-        .photo-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .photo-container span {
-            position: absolute;
-            color: white;
-            font-size: 0.9em;
-            text-align: center;
-            display: none;
-        }
-        .photo-container img:not([src]) + span {
-            display: block;
-        }
-        .left h1 {
-            font-size: 1.8em;
-            margin: 10px 0;
-        }
-        .left p {
-            margin: 5px 0;
-            text-align: center;
-        }
-        .left .skills, .left .contact {
-            margin-top: 20px;
-            width: 100%;
-        }
-        .left h2 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            border-bottom: 1px solid white;
-            padding-bottom: 5px;
-        }
-        .left ul {
-            list-style: none;
-            padding: 0;
-        }
-        .left ul li {
-            margin: 5px 0;
-        }
-        .right {
-            padding: 20px;
-            width: 70%;
-        }
-        .right h2 {
-            font-size: 1.5em;
-            color: #4CAF50;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-        }
-        .right .section {
-            margin-bottom: 20px;
-        }
-        .right ul {
-            list-style: none;
-            padding: 0;
-        }
-        .right ul li {
-            margin: 10px 0;
-        }
-        .right ul li strong {
-            display: block;
-            font-size: 1.1em;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="navbar">
@@ -163,7 +31,7 @@
                 <ul>
                     <li>📞 81768xxxxx</li>
                     <li>📧 sxx@x.com</li>
-                    <li>🔗 <a href="https://www.linkedin.com/in/satwik-keshari-983311338" target="_blank" style="color: white;">LinkedIn Profile</a></li>
+                    <li>🔗 <a href="https://www.linkedin.com/in/satwik-keshari-983311338" target="_blank" style="color: white;">LinkedIn</a></li>
                 </ul>
             </div>
             <div class="skills" id="skills">
@@ -179,66 +47,88 @@
                     <li>-Canva Development</li>
                 </ul>
             </div>
+            <div class="hobbies" id="hobbies">
+                <h2>Interests & Hobbies</h2>
+                <ul>
+                    <li>-Playing Guitar and Piano (self-taught)</li>
+                    <li>-Solving advanced Rubik’s cubes (demonstrates problem-solving and logical thinking)</li>
+                    <li>-Fitness and Strength Training (focused on discipline and consistency)</li>
+                    <li>-Interest in Japanese Animation and Storytelling (creative thinking and cultural appreciation)</li>
+                    <li>-Entrepreneurship and Tech Startups (actively involved in tech innovations)</li>
+                    <li>-Event Management and Political Outreach (hands-on experience with organizing and networking)</li>
+                </ul>
+            </div>
         </div>
         <div class="right">
             <div class="section" id="experience">
                 <h2>Professional Experience</h2>
-                <ul>
-                    <li>
+                <div class="card-container">
+                    <div class="card">
                         <strong>Sales Intern (Volunteer)</strong> - Candidate.live (2024 – Present)
                         <ul>
                             <li>Volunteering as part of the core outreach team to connect with high-profile political figures.</li>
                             <li>Supporting product demos, cold outreach, and partnership discussions.</li>
                             <li>Assisted in organizing events like “The Budget Controversy.”</li>
                         </ul>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="card">
                         <strong>Sales & Accounts Manager</strong> - Vindhyawasini Traders (November 2021 – Present)
                         <ul>
                             <li>Managed all aspects of sales, inventory management, and accounts for the retail business.</li>
                             <li>Worked with Tally ERP 9 to manage accounts and streamline business operations.</li>
                         </ul>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="card">
                         <strong>Cashier</strong> - Local Retail Store (2019 – 2020)
                         <ul>
                             <li>Managed cash transactions and provided exceptional customer service.</li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <div class="section" id="education">
                 <h2>Education</h2>
-                <ul>
-                    <li>
+                <div class="card-container">
+                    <div class="card">
                         <strong>BBA in Digital Business and Entrepreneurship</strong> - Indian Institute of Management Bangalore (2024 – Present)
-                    </li>
-                    <li>
+                    </div>
+                    <div class="card">
                         <strong>Senior Secondary (Class 12)</strong> - Loins School, Mirzapur – CBSE (2021 – 2023)
                         <ul>
                             <li>Stream: Science with Informatics Practices</li>
                             <li>Scored: 82.6%</li>
                         </ul>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="card">
                         <strong>Secondary (Class 10)</strong> - Seth Dwarka Prasad Bajaj Education Center (Completed: 2021)
                         <ul>
                             <li>Stream: Science with Computer</li>
                             <li>Scored: 89.4%</li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <div class="section" id="achievements">
                 <h2>Achievements & Certifications</h2>
-                <ul>
-                    <li>Selected for the Y20 Program and represented Mirzapur at IIT Kanpur.</li>
-                    <li>Attended the Young Leaders Program at IIM Lucknow.</li>
-                    <li>Awarded titles such as “Smart Kid” and “English Proficiency.”</li>
-                    <li>Secured 3rd rank in the Prakhar Scholarship Program (Class 9).</li>
-                </ul>
+                <div class="card-container">
+                    <div class="card">
+                        Selected for the Y20 Program and represented Mirzapur at IIT Kanpur.
+                    </div>
+                    <div class="card">
+                        Attended the Young Leaders Program at IIM Lucknow.
+                    </div>
+                    <div class="card">
+                        Awarded titles such as “Smart Kid” and “English Proficiency.”
+                    </div>
+                    <div class="card">
+                        Secured 3rd rank in the Prakhar Scholarship Program (Class 9).
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Satwik Keshari. All rights reserved.</p>
     </div>
 </body>
 </html>
